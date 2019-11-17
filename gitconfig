@@ -1,0 +1,7 @@
+[user]
+	email = tobe@filled.in
+	name = pavelexpertov
+[alias]
+	csum = rev-list master.. --count
+[core]
+	editor = vim

@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [cd shell/autojump && ./install.py, Set up 'autojump']
+
+- clean: ['~']
+
+- create:
+    - ~/.scripts
+    - ~/.pyenv_plugins
+
+- link:
+    ~/.antigen.zsh: zsh/antigen/antigen.zsh
+    ~/.gitconfig: gitconfig
+    ~/.pyenv: python/pyenv
+    ~/.pyenv_plugins/pyenv-virtualenv: python/plugins/pyenv-virtualenv
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
