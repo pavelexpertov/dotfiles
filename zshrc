@@ -39,19 +39,18 @@ PATH=$PATH:~/.pyenv_plugins
 # PATH=$PATH:~/.pyenv_plugins/pyenv-virtualenv
 export PYENV_HOOK_PATH=~/.pyenv_plugins
 
-# >>> conda initialize >>>
+# Initialising conda based on installed distribution
+
 # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/pavel/.miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/pavel/.miniconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/pavel/.miniconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/pavel/.miniconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
+if [ -d ~/.miniconda3 ]
+then
+    export PATH="/home/pavel/.miniconda3/bin:$PATH"
+elif [ -d ~/.anaconda3 ]
+then
+    export PATH="/home/pavel/.anaconda3/bin:$PATH"
+else
+    echo "No anaconda diretory found."
+fi
 # <<< conda initialize <<<
 
 # Stuff for turning on the node veresion manager
