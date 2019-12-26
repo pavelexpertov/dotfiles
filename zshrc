@@ -31,7 +31,7 @@ antigen apply
 # Add .local of python user directories to be available in the path.
 PATH=$PATH:~/.local/bin
 
-# Add .local of python user directories to be available in the path.
+# Add local .bin for other applications to be available in the path.
 PATH=$PATH:~/.bin
 
 # Add pyenv's plugin directory to be available in the path and export an environment variable.
@@ -51,7 +51,6 @@ then
 else
     echo "No anaconda diretory found."
 fi
-# <<< conda initialize <<<
 
 # Stuff for turning on the node veresion manager
 # export NVM_DIR="$HOME/.nvm"

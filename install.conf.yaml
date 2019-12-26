@@ -2,16 +2,18 @@
     link:
       relink: true
 
+- create:
+    - ~/.bin
+    - ~/.scripts
+    - ~/.pyenv_plugins
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [cd shell/autojump && ./install.py, Set up 'autojump']
-    - [sh install_miniconda.sh, Install 'miniconda' distribution]
+    - [sh installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
+    - [sh installation_scripts/install_exa.sh, Install 'exa' command tool]
 
 - clean: ['~']
-
-- create:
-    - ~/.scripts
-    - ~/.pyenv_plugins
 
 - link:
     ~/.antigen.zsh: zsh/antigen/antigen.zsh
