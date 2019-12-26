@@ -60,6 +60,9 @@ fi
 # Configuring thefuck command
 # eval $(thefuck --alias)
 
+# Source the alias
+source ~/.alias
+
 # Add pyenv path to PATH
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

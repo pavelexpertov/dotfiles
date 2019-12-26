@@ -16,6 +16,7 @@
 - clean: ['~']
 
 - link:
+    ~/.alias: alias
     ~/.antigen.zsh: zsh/antigen/antigen.zsh
     ~/.gitconfig: gitconfig
     ~/.pyenv: python/pyenv

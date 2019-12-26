@@ -1,0 +1,3 @@
+# exa-related aliases
+alias exal='exa --long'
+alias exalg='exa --long --git'
