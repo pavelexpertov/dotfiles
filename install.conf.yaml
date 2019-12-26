@@ -5,6 +5,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [cd shell/autojump && ./install.py, Set up 'autojump']
+    - [sh install_miniconda.sh, Install 'miniconda' distribution]
 
 - clean: ['~']
 
