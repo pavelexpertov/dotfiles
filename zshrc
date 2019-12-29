@@ -44,12 +44,12 @@ export PYENV_HOOK_PATH=~/.pyenv_plugins
 # !! Contents within this block are managed by 'conda init' !!
 if [ -d ~/.miniconda3 ]
 then
-    export PATH="/home/pavel/.miniconda3/bin:$PATH"
+    . ~/.miniconda3/etc/profile.d/conda.sh
 elif [ -d ~/.anaconda3 ]
 then
-    export PATH="/home/pavel/.anaconda3/bin:$PATH"
+    . ~/.anaconda3/etc/profile.d/conda.sh
 else
-    echo "No anaconda diretory found."
+    echo "No anaconda/miniconda directory found."
 fi
 
 # Stuff for turning on the node veresion manager
