@@ -18,9 +18,15 @@ compinit
 source ~/.antigen.zsh
 antigen use oh-my-zsh
 antigen bundle autojump
+antigen bundle docker
 antigen bundle git
+antigen bundle gitfast
 antigen bundle nvm
+antigen bundle pip
+antigen bundle pipenv
+antigen bundle pyenv
 antigen bundle tmux
+antigen bundle vagrant
 antigen bundle vi-mode
 antigen theme amuse
 antigen apply
