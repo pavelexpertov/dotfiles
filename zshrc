@@ -69,6 +69,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Configuring thefuck command
 # eval $(thefuck --alias)
 
+# Setting up fzf with autocomplete and all
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Source the alias
 source ~/.alias
 
@@ -77,3 +80,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+

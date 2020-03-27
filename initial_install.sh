@@ -2,7 +2,9 @@ sudo apt update
 # Shell related packates
 sudo apt install -y zsh tmux 
 # Utility packages
-sudo apt install -y unzip entr autojump silversearcher-ag 
+sudo apt install -y unzip autojump silversearcher-ag 
+# Development tools
+sudo apt install -y vim entr 
 # Python related packages
 sudo apt install -y python python3 python3-pip
 # For the pyenv dependencies
