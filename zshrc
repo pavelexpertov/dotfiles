@@ -75,6 +75,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Source the alias
 source ~/.alias
 
+# Source the function
+source ~/.function
+
 # Add pyenv path to PATH
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

@@ -20,6 +20,7 @@
 - link:
     ~/.alias: alias
     ~/.antigen.zsh: zsh/antigen/antigen.zsh
+    ~/.function: function
     ~/.gitconfig: gitconfig
     ~/.pyenv: python/pyenv
     ~/.pyenv_plugins/pyenv-virtualenv: python/plugins/pyenv-virtualenv
