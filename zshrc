@@ -22,6 +22,7 @@ antigen bundle docker
 antigen bundle git
 antigen bundle gitfast
 antigen bundle nvm
+antigen bundle kubectl
 antigen bundle pip
 antigen bundle pipenv
 antigen bundle pyenv
