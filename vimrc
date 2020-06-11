@@ -15,6 +15,9 @@ au FocusGained,BufEnter * checktime
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Shortcut to togle NERDTree
+map <leader>t :NERDTreeToggle<CR>
+
 " show line numbers
 set number
 
