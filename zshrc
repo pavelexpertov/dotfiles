@@ -4,6 +4,8 @@ HISTSIZE=20000
 SAVEHIST=20000
 # Set vi-like bindings
 bindkey -v
+# Set a custom key for clearing screen
+bindkey "^b" clear-screen
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename "/home/${USER}/.zshrc"
