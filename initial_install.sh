@@ -2,7 +2,7 @@ sudo apt update
 # Shell related packates
 sudo apt install -y zsh tmux
 # Utility packages
-sudo apt install -y unzip autojump silversearcher-ag ripgrep
+sudo apt install -y unzip autojump silversearcher-ag ripgrep fd-find
 # Development tools
 sudo apt install -y vim entr
 # Python related packages

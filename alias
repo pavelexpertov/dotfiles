@@ -1,3 +1,6 @@
 # exa-related aliases
 alias exal='exa --long'
 alias exalg='exa --long --git'
+
+# Renaming inconvenient names into convenient ones
+alias fd='fdfind'
