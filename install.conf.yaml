@@ -20,6 +20,7 @@
     - [sh installation_scripts/install_nvm.sh, Install 'nvm' command for node version management]
     - [sh installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
     - [sh installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
+    - [sh installation_scripts/install_bat.sh, Install 'bat' command]
 
 - clean: ['~']
 
