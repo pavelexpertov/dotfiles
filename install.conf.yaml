@@ -11,7 +11,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [cd shell/autojump && ./install.py, Set up 'autojump']
     - [sh installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
     - [sh installation_scripts/install_exa.sh, Install 'exa' command tool]
     - [sh installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
@@ -21,6 +20,7 @@
     - [sh installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
     - [sh installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
     - [sh installation_scripts/install_bat.sh, Install 'bat' command]
+    - [sh installation_scripts/install_fasd.sh, Install 'fasd' command]
 
 - clean: ['~']
 

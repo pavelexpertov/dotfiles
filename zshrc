@@ -19,7 +19,7 @@ compinit
 # Loading antigen
 source ~/.antigen.zsh
 antigen use oh-my-zsh
-antigen bundle autojump
+antigen bundle fasd
 antigen bundle docker
 antigen bundle git
 antigen bundle gitfast
@@ -32,9 +32,6 @@ antigen bundle vagrant
 antigen bundle vi-mode
 antigen theme amuse
 antigen apply
-
-# Source autojump shell script
-. $HOME/.autojump/etc/profile.d/autojump.sh
 
 # Add .local of python user directories to be available in the path.
 PATH=$PATH:~/.local/bin
@@ -74,10 +71,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Setting up fzf with autocomplete and all
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Source the alias
+# Source the aliases
 source ~/.alias
 
-# Source the function
+# Source the functions
 source ~/.function
 
 # Add pyenv path to PATH

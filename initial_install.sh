@@ -2,7 +2,7 @@ sudo apt update
 # Shell related packates
 sudo apt install -y zsh tmux
 # Utility packages
-sudo apt install -y unzip autojump silversearcher-ag ripgrep fd-find htop xclip
+sudo apt install -y unzip silversearcher-ag ripgrep fd-find htop xclip
 # Development tools
 sudo apt install -y vim entr
 # Python related packages
