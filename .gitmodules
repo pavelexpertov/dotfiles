@@ -8,9 +8,6 @@
 [submodule "python/pyenv"]
 	path = python/pyenv
 	url = git@github.com:pyenv/pyenv.git
-[submodule "shell/autojump"]
-	path = shell/autojump
-	url = git@github.com:wting/autojump.git
 [submodule "python/plugins/pyenv-virtualenv"]
 	path = python/plugins/pyenv-virtualenv
 	url = git@github.com:pyenv/pyenv-virtualenv.git
