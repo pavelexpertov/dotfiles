@@ -30,6 +30,7 @@ antigen bundle pyenv
 antigen bundle tmux
 antigen bundle vagrant
 antigen bundle vi-mode
+antigen bundle terraform
 antigen theme amuse
 antigen apply
 
