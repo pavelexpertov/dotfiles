@@ -31,6 +31,7 @@
     - [bash installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
     - [bash installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
     - [bash installation_scripts/install_bat.sh, Install 'bat' command]
+    - [bash installation_scripts/install_gh.sh, Install 'gh' command]
 
 - clean: ['~']
 
