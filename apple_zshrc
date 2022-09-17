@@ -1,0 +1,15 @@
+# Check whether you need the below, for python 3.8 availability
+export PATH="$PATH:/Users/pavel/Library/Python/3.8/bin"
+
+# Created by `pipx` on 2022-08-18 16:34:51
+#export PATH="$PATH:/Users/pavel/.local/bin"
+
+export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin/xelatex"
+
+# For libffi and pkg so you can install CFFI
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
+
+# Running asdf.sh script
+#. $HOME/.asdf/asdf.sh

@@ -18,6 +18,9 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.apple_zshrc:
+      path: apple_zshrc
+      if: '[ `uname` = Darwin ]'
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

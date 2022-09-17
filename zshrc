@@ -67,3 +67,9 @@ source ~/.alias
 # Source the functions
 source ~/.function
 
+# Source Apple-related zshrc
+if [[ -f ~/.apple_zshrc ]]
+then
+    source ~/.apple_zshrc
+fi
+
