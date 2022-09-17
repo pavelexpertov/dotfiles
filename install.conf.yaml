@@ -17,12 +17,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-    ~/.profile:
-        force: true
-        path: profile
-    ~/.zprofile:
-        force: true
-        path: zprofile
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -30,12 +24,12 @@
     - [bash installation_scripts/install_exa.sh, Install 'exa' command tool]
     - [bash installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
     - [bash installation_scripts/install_fzf.sh, Install 'fzf' command line utility]
+    - [bash installation_scripts/install_fasd.sh, Install 'fasd' command]
+    - [bash installation_scripts/install_asdf.sh, Install 'asdf' command]
     - [bash installation_scripts/install_vim_plug.sh, Install 'vim-plug' Vim's plugin utility]
     - [bash installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
     - [bash installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
     - [bash installation_scripts/install_bat.sh, Install 'bat' command]
-    - [bash installation_scripts/install_fasd.sh, Install 'fasd' command]
-    - [bash installation_scripts/install_asdf.sh, Install 'asdf' command]
 
 - clean: ['~']
 

@@ -12,8 +12,6 @@ git submodule update --recursive --remote
 # Change shell (tip: run `cat /etc/shells` to see what you got and pop it in command)
 sudo chsh -s /bin/zsh $USER
 # Log out or reboot manually. Then continue...
-# Run after installation script
-sh after_install_script.sh
 ```
 
 ## Documentation for Dotbot
