@@ -19,6 +19,7 @@ compinit
 # Loading antigen
 source ~/.antigen.zsh
 antigen use oh-my-zsh
+antigen bundle asdf
 antigen bundle fasd
 antigen bundle docker
 antigen bundle git
@@ -26,7 +27,6 @@ antigen bundle gitfast
 antigen bundle nvm
 antigen bundle kubectl
 antigen bundle pip
-antigen bundle pyenv
 antigen bundle tmux
 antigen bundle vagrant
 antigen bundle vi-mode
@@ -40,10 +40,6 @@ PATH=$PATH:~/.local/bin
 # Add local .bin for other applications to be available in the path.
 PATH=$PATH:~/.bin
 
-# Add pyenv's plugin directory to be available in the path and export an environment variable.
-PATH=$PATH:~/.pyenv_plugins
-# PATH=$PATH:~/.pyenv_plugins/pyenv-virtualenv
-export PYENV_HOOK_PATH=~/.pyenv_plugins
 
 # Initialising conda based on installed distribution
 
@@ -58,13 +54,6 @@ else
     echo "No anaconda/miniconda directory found."
 fi
 
-# Stuff for turning on the node veresion manager
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Configuring thefuck command
 # eval $(thefuck --alias)
@@ -77,10 +66,4 @@ source ~/.alias
 
 # Source the functions
 source ~/.function
-
-# Add pyenv path to PATH
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 

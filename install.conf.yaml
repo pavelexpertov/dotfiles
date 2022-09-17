@@ -9,28 +9,11 @@
     - ~/.vim/autoload
     - ~/.vim/plugged
 
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [bash installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
-    - [bash installation_scripts/install_exa.sh, Install 'exa' command tool]
-    - [bash installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
-    - [bash installation_scripts/install_fzf.sh, Install 'fzf' command line utility]
-    - [bash installation_scripts/install_vim_plug.sh, Install 'vim-plug' Vim's plugin utility]
-    - [bash installation_scripts/install_nvm.sh, Install 'nvm' command for node version management]
-    - [bash installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
-    - [bash installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
-    - [bash installation_scripts/install_bat.sh, Install 'bat' command]
-    - [bash installation_scripts/install_fasd.sh, Install 'fasd' command]
-
-- clean: ['~']
-
 - link:
     ~/.alias: alias
     ~/.antigen.zsh: zsh/antigen/antigen.zsh
     ~/.function: function
     ~/.gitconfig: gitconfig
-    ~/.pyenv: python/pyenv
-    ~/.pyenv_plugins/pyenv-virtualenv: python/plugins/pyenv-virtualenv
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
@@ -40,3 +23,19 @@
     ~/.zprofile:
         force: true
         path: zprofile
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [bash installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
+    - [bash installation_scripts/install_exa.sh, Install 'exa' command tool]
+    - [bash installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
+    - [bash installation_scripts/install_fzf.sh, Install 'fzf' command line utility]
+    - [bash installation_scripts/install_vim_plug.sh, Install 'vim-plug' Vim's plugin utility]
+    - [bash installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
+    - [bash installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
+    - [bash installation_scripts/install_bat.sh, Install 'bat' command]
+    - [bash installation_scripts/install_fasd.sh, Install 'fasd' command]
+    - [bash installation_scripts/install_asdf.sh, Install 'asdf' command]
+
+- clean: ['~']
+
