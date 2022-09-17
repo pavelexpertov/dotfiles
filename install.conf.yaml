@@ -11,7 +11,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [sh installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
+    - [bash installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
     - [sh installation_scripts/install_exa.sh, Install 'exa' command tool]
     - [sh installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
     - [sh installation_scripts/install_fzf.sh, Install 'fzf' command line utility]
