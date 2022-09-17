@@ -5,3 +5,7 @@ alias exalg='exa --long --git'
 # Renaming inconvenient names into convenient ones
 alias ls='exa'
 alias fd='fdfind'
+
+# xclip-related alias
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
