@@ -1,2 +1,3 @@
 # Function to create directory recursively and then change to it
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function get_branches () { echo "$(git branch)" }
