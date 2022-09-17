@@ -1,4 +1,7 @@
-sudo add-apt-repository -y ppa:aacebedo/fasd
-sudo apt-get update
-sudo apt-get install fasd
+if [[ -z "`type -P fasd`" ]]
+then
+    sudo apt-get install fasd
+else
+    echo "fasd is installed"
+fi
 

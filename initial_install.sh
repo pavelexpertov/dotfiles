@@ -8,7 +8,7 @@ all_packages="$all_packages unzip silversearcher-ag ripgrep fd-find htop xclip j
 # Development tools
 all_packages="$all_packages vim entr"
 # Python related packages
-all_packages="$all_packages python3 python3-pip python3-venv"
+all_packages="$all_packages python3 python3-pip python3-venv python3-virtualenv"
 # Virtualisation packages
 all_packages+=" virtualbox"
 
