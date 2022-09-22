@@ -1,6 +1,6 @@
 all_packages=""
 # CLI tools
-all_packages+=" bat wget tmux fasd entr the_silver_searcher ripgrep htop jq jid fd gh"
+all_packages+=" bat wget tmux fasd entr the_silver_searcher ripgrep htop jq jid fd gh httpie"
 # Cloud/Containers related stuff
 all_packages+=" kubectx"
 # Jupyter related stuff
