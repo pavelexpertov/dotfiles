@@ -65,6 +65,17 @@ set nobackup
 set nowb
 set noswapfile
 
+
+
+""""""""""""""""""""""""""""""
+" => VIM user interface
+""""""""""""""""""""""""""""""
+" Turn on the Wild menu
+set wildmenu
+
+" A buffer becomes hidden when it is abandoned
+set hid
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""

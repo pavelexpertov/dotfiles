@@ -57,6 +57,9 @@ fi
 # Configuring thefuck command
 # eval $(thefuck --alias)
 
+# Configuring default editor for `gh`
+export EDITOR=vim
+
 # Setting up fzf with autocomplete and all
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
