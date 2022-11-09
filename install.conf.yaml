@@ -21,10 +21,11 @@
     ~/.apple_zshrc:
       path: apple_zshrc
       if: '[ `uname` = Darwin ]'
+    ~/.condarc: condarc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [bash installation_scripts/install_miniconda.sh, Install 'miniconda' distribution]
+    - [bash installation_scripts/install_mambaforge.sh, Install 'mambaforge' distribution]
     - [bash installation_scripts/install_exa.sh, Install 'exa' command tool]
     - [bash installation_scripts/install_vagrant.sh, Install 'vagrant' command tool]
     - [bash installation_scripts/install_fzf.sh, Install 'fzf' command line utility]

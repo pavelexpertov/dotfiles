@@ -41,17 +41,20 @@ PATH=$PATH:~/.bin
 
 
 # Initialising conda based on installed distribution
-
 # !! Contents within this block are managed by 'conda init' !!
-if [ -d ~/.miniconda3 ]
-then
-    . ~/.miniconda3/etc/profile.d/conda.sh
-elif [ -d ~/.anaconda3 ]
-then
-    . ~/.anaconda3/etc/profile.d/conda.sh
+__conda_path="$HOME/.mambaforge/bin/conda"
+__conda_setup="$($__conda_path 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
 else
-    echo "No anaconda/miniconda directory found."
+    if [ -f "$HOME/.mambaforge/etc/profile.d/conda.sh" ]; then
+        . "$HOME/.mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="$PATH:$HOME/.mambaforge/bin"
+    fi
 fi
+unset __conda_setup
+unset __conda_path
 
 
 # Configuring thefuck command

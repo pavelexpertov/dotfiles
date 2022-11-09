@@ -6,6 +6,9 @@ then
     sudo apt update
     sudo apt install gh -y
 
+    # If you see that this script failed during 'installation',
+    # it's because you need to set GitHub token in environment
+    # for operation to work.
     gh extension install davidraviv/gh-clean-branches
 else
     echo "gh is installed"
