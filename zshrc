@@ -72,6 +72,12 @@ source ~/.alias
 # Source the functions
 source ~/.function
 
+# Source custom environment variables
+if [[ -f ~/.custom_environment_variables ]]
+then
+    source ~/.custom_environment_variables
+fi
+
 # Source Apple-related zshrc
 if [[ -f ~/.apple_zshrc ]]
 then
