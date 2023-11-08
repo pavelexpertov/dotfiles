@@ -2,7 +2,7 @@ all_packages=""
 # CLI tools
 all_packages+=" bat wget tmux fasd entr the_silver_searcher ripgrep htop jq jid fd gh httpie"
 # Cloud/Containers related stuff
-all_packages+=" kubectx"
+all_packages+=" kubectx podman podman-desktop"
 # Jupyter related stuff
 all_packages+=" pandoc"
 # misc. dependencies
