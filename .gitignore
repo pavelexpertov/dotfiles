@@ -1,2 +1,3 @@
 .vagrant
 *.log
+.tool-versions

@@ -72,6 +72,9 @@ source ~/.alias
 # Source the functions
 source ~/.function
 
+# Source the environment variables
+source ~/.dotfiles_environment_files
+
 # Source custom environment variables
 if [[ -f ~/.custom_environment_variables ]]
 then

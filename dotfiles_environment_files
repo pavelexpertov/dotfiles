@@ -1,0 +1,2 @@
+# For the smdv, which is a dependency for vim-instant-markdown
+export SMDV_DEFAULT_ARGS="--browser firefox --port 9999"

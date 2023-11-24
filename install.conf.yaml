@@ -12,16 +12,17 @@
 - link:
     ~/.alias: alias
     ~/.antigen.zsh: zsh/antigen/antigen.zsh
+    ~/.apple_zshrc:
+      path: apple_zshrc
+      if: '[ `uname` = Darwin ]'
+    ~/.condarc: condarc
+    ~/.dotfiles_environment_files: dotfiles_environment_files
     ~/.function: function
     ~/.gitconfig: gitconfig
     ~/.tool-versions: tool-versions
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
-    ~/.apple_zshrc:
-      path: apple_zshrc
-      if: '[ `uname` = Darwin ]'
-    ~/.condarc: condarc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -34,6 +35,7 @@
     - [bash installation_scripts/install_vim_plug.sh, Install 'vim-plug' Vim's plugin utility]
     - [bash installation_scripts/install_pipx.sh, Install 'pipx' command for installing python cmd apps]
     - [bash installation_scripts/install_python_apps_via_pipx.sh, Install various python applications]
+    - [bash installation_scripts/install_nodejs_apps_and_dependencies.sh, Install various nodejs applications and dependencies]
     - [bash installation_scripts/install_bat.sh, Install 'bat' command]
     - [bash installation_scripts/install_gh.sh, Install 'gh' command]
 
