@@ -2,9 +2,9 @@ sudo apt update
 
 all_packages=""
 # Shell related packates
-all_packages="$all_packages zsh tmux xclip"
+all_packages="$all_packages zsh tmux xclip jq jid"
 # Utility packages
-all_packages="$all_packages unzip silversearcher-ag ripgrep fd-find htop xclip jq jid"
+all_packages="$all_packages unzip silversearcher-ag ripgrep fd-find htop nala"
 # Development tools
 all_packages="$all_packages vim entr"
 # Python related packages
