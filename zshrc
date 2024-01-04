@@ -76,6 +76,12 @@ source ~/.function
 source ~/.dotfiles_environment_files
 
 # Source custom environment variables
+if [[ -f ~/.custom_environment_configurations ]]
+then
+    source ~/.custom_environment_configurations
+fi
+
+# Source custom environment variables
 if [[ -f ~/.custom_environment_variables ]]
 then
     source ~/.custom_environment_variables
@@ -87,3 +93,7 @@ then
     source ~/.apple_zshrc
 fi
 
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/pavel/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
