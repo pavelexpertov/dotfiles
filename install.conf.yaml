@@ -19,6 +19,7 @@
     ~/.dotfiles_environment_files: dotfiles_environment_files
     ~/.function: function
     ~/.gitconfig: gitconfig
+    ~/.gitconfig-home: gitconfig-home
     ~/.tool-versions: tool-versions
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc

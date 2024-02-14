@@ -1,7 +1,10 @@
-[user]
-	email = pavelm01@hotmail.co.uk
-	name = pavelexpertov
 [alias]
 	csum = rev-list master.. --count
 [core]
 	editor = vim
+
+[includeIf "gitdir:~/dev/"]
+	path = .gitconfig-home
+
+[includeIf "gitdir:~/work_dev/"]
+	path = .gitconfig-work
