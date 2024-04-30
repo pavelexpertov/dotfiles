@@ -106,6 +106,12 @@ cnoreabbrev Ack Ack!
 " Maps <leader>/ so we're ready to type the search keyword
 nnoremap <Leader>/ :Ack!<Space>
 
+""""""""""""""""""""""""""""""
+" => Instant Markdown Settings
+""""""""""""""""""""""""""""""
+" Disable insatant markdown at the start
+let g:instant_markdown_autostart = 0
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'
